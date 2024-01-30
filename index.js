@@ -15,6 +15,8 @@ import ChatRoute from './routers/ChatRoute.js'
 import MessageRoute from './routers/MessageRoute.js'
 import UploadRoute from './routers/UploadRoute.js'
 import ProductRoute from './routers/ProductRoute.js'
+import ServiceRoute from './routers/ServiceRoute.js'
+import CategoryServiceRoute from './routers/CategoryServiceRoute.js'
 
 // middleware
 app.use(bodyParser.json({ limit: "30mb", extended: true }));
@@ -40,3 +42,5 @@ app.use('/chat', ChatRoute)
 app.use('/message', MessageRoute)
 app.use('/upload', UploadRoute)
 app.use('/product', ProductRoute)
+app.use('/service', ServiceRoute)
+app.use('/categoryService', CategoryServiceRoute)
